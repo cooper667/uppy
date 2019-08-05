@@ -22,7 +22,7 @@ matrix:
     # Start this first because it takes a while, so it doesn't only start running after
     # other jobs have run
     - node_js: 10
-      env: ENDTOEND=true
+      env: ENDTOEND=true NODE_DEBUG=request
       if: type = push
       addons:
         apt: *APT
